@@ -2,12 +2,12 @@ import Head from "next/head";
 import { Text, Link, Navbar, Spacer, Divider, Button, Row, Card, Image } from "@nextui-org/react";
 
 function Section(text, image, flip_mode) {
-    var text_section=<div style={{width:"50%", height:"100%"}} className="wrapper show">
+    var text_section=<div style={{width:"50%", height:"100%"}} className="wrapper hidden">
                         <div>
                             {text}
                         </div>
                     </div>
-    var image_section=<div style={{width:"50%", height:"100%"}} className="wrapper show">
+    var image_section=<div style={{width:"50%", height:"100%"}} className="wrapper hidden">
                         <img css={{zIndex:999}} src={image} style={{borderRadius:"100px", border:"2px solid #333", width: "45vw", marginLeft:"-2vw", maxHeight:"60%"}}></img>
                     </div>
     return (
@@ -24,7 +24,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title></title>
+                <title>Tutnakhamun</title>
+                <script defer src='/animation.js'></script>
             </Head>
             {Section(
                 (<>
@@ -34,10 +35,10 @@ export default function Home() {
                 </>), "kingtut.jpg"
             )}
 
-            <div style={{width:"100vw", height:"100vh"}} className="wrapper show">
-                <Card css={{"p":"$5", maxWidth:"75vw", border:"2px solid #333"}} isPressable isHoverable>
+            <div style={{width:"100vw", height:"100vh"}} className="wrapper hidden">
+                <Card css={{"p":"$5", maxWidth:"75vw", border:"2px solid #333"}} isPressable isHoverable className="hideen">
                 <Row className="wrapper">
-                    <div className="wrapper show">
+                    <div className="wrapper hidden">
                         <div>
                         <Text h1 size={"150px"} className="vertical">Team Members</Text>
                         <Spacer></Spacer>
@@ -90,7 +91,7 @@ export default function Home() {
             </>), "kingtutafter.avif", true
         )}
 
-                <Text h1 className="wrapper" size={"100px"}>Theories of his Death</Text>
+                <Text h1 className="wrapper hidden" size={"100px"}>Theories of his Death</Text>
 
         {Section(
             (<>
