@@ -28,16 +28,16 @@ export default function Home() {
             </Head>
             {Section(
                 (<>
-                <Text h1 size={"80px"}>Discovering Tut</Text>
+                <Text h1 size={"80px"}>Discovering <br></br>Tut</Text>
                         <Spacer></Spacer>
                         <Text h4>A Study by students of Class 11-K surrounding King  <br></br>Tutankhamun's death and prevalent theories which have<br></br> been presented by archaeologists.</Text>
                 </>), "kingtut.jpg"
             )}
 
             <div style={{width:"100vw", height:"100vh"}} className="wrapper show">
-                <Card css={{"p":"$5", width:"60vw", height:"60vh", border:"2px solid #333"}} isPressable isHoverable>
-                <Row css={{height:"100vh"}}>
-                    <div style={{width:"100%", height:"100%"}} className="wrapper show">
+                <Card css={{"p":"$5", maxWidth:"75vw", border:"2px solid #333"}} isPressable isHoverable>
+                <Row className="wrapper">
+                    <div className="wrapper show">
                         <div>
                         <Text h1 size={"150px"} className="vertical">Team Members</Text>
                         <Spacer></Spacer>
@@ -72,7 +72,7 @@ export default function Home() {
 
             {Section(
                 (<>
-                <Text h1 size={"80px"}>Who was King Tut?</Text>
+                <Text h1 size={"80px"}>Who was King <br></br> Tut?</Text>
                         <Spacer></Spacer>
                         <Text h4>
                         King Tutankhamun, commonly known as King Tut, was an<br></br> ancient Egyptian pharaoh who ruled during the 18th dynasty<br></br> (approximately 1332–1323 BCE) of the New Kingdom period.<br></br> He ascended to the throne at a young age, around nine or ten,<br></br> and his reign was relatively short-lived. Tutankhamun is<br></br> particularly renowned for the discovery of his nearly intact<br></br> tomb in the Valley of the Kings by Howard Carter in 1922.
@@ -104,7 +104,7 @@ export default function Home() {
 
         {Section(
             (<>
-            <Text h1 size={"80px"}>A Chariot Accident</Text>
+            <Text h1 size={"80px"}>A Chariot <br></br>Accident</Text>
                     <Spacer></Spacer>
                     <Text h4>
                     <br></br>Upon discovering King Tutankhamun's tomb,<br></br>Egyptologists found six disassembled chariots.<br></br>Examinations suggested chariot accidents might<br></br>have caused Tutankhamun's injuries, drawing parallels<br></br>to car accidents. However, contemporary archaeologists<br></br>no longer endorse this theory.<br></br><br></br>Further investigation into Tutankhamun's family<br></br>revealed his mother's mummy, also injured in a<br></br>chariot accident. Remarkably, Tutankhamun's injuries<br></br>were more severe, prompting a reassessment of the<br></br>initial hypothesis about his cause of death.
