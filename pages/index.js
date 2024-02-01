@@ -71,15 +71,9 @@ export default function Home() {
                 </Card>
             </div>
 
-            {Section(
-                (<>
-                <Text h1 size={"80px"}>Who was King <br></br> Tut?</Text>
-                        <Spacer></Spacer>
-                        <Text h4>
-                        King Tutankhamun, commonly known as King Tut, was an<br></br> ancient Egyptian pharaoh who ruled during the 18th dynasty<br></br> (approximately 1332–1323 BCE) of the New Kingdom period.<br></br> He ascended to the throne at a young age, around nine or ten,<br></br> and his reign was relatively short-lived. Tutankhamun is<br></br> particularly renowned for the discovery of his nearly intact<br></br> tomb in the Valley of the Kings by Howard Carter in 1922.
-                        </Text>
-                </>), "kingtut.jpg"
-            )}
+            <div>
+
+            </div>
 
         {Section(
             (<>
@@ -120,7 +114,7 @@ export default function Home() {
                     <Text h4>
                     In a comprehensive 2010 study examining Tut's mummy,<br></br>researchers unearthed compelling evidence pointing to<br></br>the presence of repeated malarial infections throughout<br></br>his life. It is noteworthy that malaria, a prevalent<br></br>ailment in ancient Egypt, affected nearly everyone in<br></br>the population at some point. However, the widespread<br></br>occurrence of this infectious disease raises skepticism<br></br>among Egyptologists, leading to a cautious<br></br>reconsideration of whether malaria was indeed the<br></br>primary cause of Tutankhamun's untimely demise.
                     </Text>
-            </>), "tutchariot.jpg",
+            </>), "egyptmalaria.jpg",
         )}
         </> 
     )
