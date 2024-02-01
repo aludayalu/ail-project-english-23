@@ -28,7 +28,7 @@ export default function Home() {
             </Head>
             {Section(
                 (<>
-                <Text h1 size={"80px"}>Discovering <br></br>Tut</Text>
+                <Text h1 size={"80px"}>Tutankhamun</Text>
                         <Spacer></Spacer>
                         <Text h4>A Study by students of Class 11-K surrounding King  <br></br>Tutankhamun's death and prevalent theories which have<br></br> been presented by archaeologists.</Text>
                 </>), "kingtut.jpg"
